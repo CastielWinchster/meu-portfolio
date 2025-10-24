@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis Henrique Bracale | Desenvolvedor Júnior</title>
+    <meta name="description" content="Meu Portfolio - Luis Bracale - Desenvolvedor em formação, especializado em desenvolvimento web.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-text">LHB</span>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#education" class="nav-link">Formação</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Olá, eu sou</p>
+                    <h1 class="hero-title">
+                        <span class="typing-text" id="typingText"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                    <p class="hero-subtitle">Desenvolvedor Júnior em Formação</p>
+                    <p class="hero-tagline">Transformando ideias em código</p>
+                    
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i>
+                            Ver Projetos
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Entre em Contato
+                        </a>
+                    </div>
+                    
+                    <div class="hero-social">
+                        <a href="https://github.com/CastielWinchster" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/luis-henrique-bracale-851b36354/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/_luis_bracale/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <div class="profile-placeholder">
+                               <img src="Luis.png">
+                            </div>
+                        </div>
+                        <div class="profile-status">
+                            <span class="status-dot"></span>
+                            <span>Disponível para oportunidades</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <p class="section-subtitle">Conheça um pouco mais sobre minha trajetória</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        Desenvolvedor em formação viciado em tecnologia e inovação. Estudei curso técnico integrado ao ensino médio na ETEC, onde aprendi a trabalhar em equipe e me comunicar efetivamente. Tenho facilidade para aprender coisas novas rapidamente e estou sempre em busca de novos desafios.
+                    </p>
+                    <p class="about-text">
+                        Atualmente cursando Análise e Desenvolvimento de Sistemas na UNIP e buscando minha primeira oportunidade profissional para aplicar e expandir meus conhecimentos na área de desenvolvimento web e tecnologia.
+                    </p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-birthday-cake"></i>
+                            <div>
+                                <span class="info-label">Idade</span>
+                                <span class="info-value">20 anos</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Localização</span>
+                                <span class="info-value">Orlândia, SP</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <span class="info-label">Formação</span>
+                                <span class="info-value">Estudante de ADS</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span class="info-label">Técnico</span>
+                                <span class="info-value">Graduado na Etec Prof. Alcídio de Souza Prado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Tecnologias</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Projetos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Anos de Estudo</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Habilidades</h2>
+                <p class="section-subtitle">Tecnologias e competências que domino</p>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-laptop-code"></i>
+                        Front-end
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                  <br><br>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Back-end
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="20"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Ferramentas
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">VS Code</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-users"></i>
+                        Soft Skills
+                    </h3>
+                    <div class="soft-skills">
+                        <div class="soft-skill-card">
+                            <i class="fas fa-users"></i>
+                            <span>Trabalho em Equipe</span>
+                        </div>
+                        <div class="soft-skill-card">
+                            <i class="fas fa-comments"></i>
+                            <span>Comunicação</span>
+                        </div>
+                        <div class="soft-skill-card">
+                            <i class="fas fa-brain"></i>
+                            <span>Aprendizado Rápido</span>
+                        </div>
+                        <div class="soft-skill-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Resolução de Problemas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-language"></i>
+                        Idiomas
+                    </h3>
+                    <div class="languages">
+                        <div class="language-item">
+                            <div class="language-header">
+                                <span class="language-name">Inglês</span>
+                                <span class="language-level">Intermediário</span>
+                            </div>
+                            <div class="language-details">
+                                <span>Leitura: Intermediário</span>
+                                <span>Escrita: Intermediário</span>
+                                <span>Conversação: Básico</span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <div class="language-header">
+                                <span class="language-name">Espanhol</span>
+                                <span class="language-level">Intermediário</span>
+                            </div>
+                            <div class="language-details">
+                                <span>Leitura: Intermediário</span>
+                                <span>Escrita: Intermediário</span>
+                                <span>Conversação: Básico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                <p class="section-subtitle">Alguns dos meus trabalhos recentes</p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="react">React</button>
+                <button class="filter-btn" data-filter="nodejs">Node.js</button>
+                <button class="filter-btn" data-filter="frontend">Front-end</button>
+                <button class="filter-btn" data-filter="backend">Back-end</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-category="react frontend">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sistema de Gerenciamento</h3>
+                        <p class="project-description">Sistema web para gerenciamento de tarefas e projetos desenvolvido com React e Node.js</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Landing Page Responsiva</h3>
+                        <p class="project-description">Landing page moderna e totalmente responsiva com animações CSS avançadas</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">GSAP</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="nodejs backend">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">API RESTful</h3>
+                        <p class="project-description">API completa com autenticação JWT e documentação Swagger</p>
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">Swagger</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="react frontend">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Dashboard Interativo</h3>
+                        <p class="project-description">Dashboard com visualização de dados e gráficos interativos</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Formação Acadêmica</h2>
+                <p class="section-subtitle">Minha trajetória educacional</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Fev 2025 - Dez 2026</div>
+                        <h3 class="timeline-title">Análise e Desenvolvimento de Sistemas</h3>
+                        <p class="timeline-institution">Universidade Paulista (UNIP)</p>
+                        <p class="timeline-location">Ribeirão Preto, SP</p>
+                        <span class="timeline-badge status-current">Em andamento</span>
+                        <p class="timeline-description">
+                            Curso superior tecnólogo focado em desenvolvimento de software, banco de dados, engenharia de software e metodologias ágeis.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Fev 2022 - Dez 2024</div>
+                        <h3 class="timeline-title">Desenvolvimento de Sistemas</h3>
+                        <p class="timeline-institution">ETEC Prof. Alcídio de Souza Prado</p>
+                        <p class="timeline-location">Orlândia, SP</p>
+                        <span class="timeline-badge status-completed">Concluído</span>
+                        <p class="timeline-description">
+                            Curso técnico integrado ao ensino médio com foco em programação, banco de dados, desenvolvimento web e mobile.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">Vamos trabalhar juntos?</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Informações de Contato</h3>
+                    <p class="contact-text">
+                        Estou sempre aberto a novas oportunidades e projetos interessantes. Sinta-se à vontade para entrar em contato!
+                    </p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:luishenriquecostamachado@outlook.com" class="contact-value">luishenriquecostamachado@outlook.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">WhatsApp</span>
+                                <a href="https://wa.me/5516981906857" target="_blank" rel="noopener" class="contact-value">(16) 98190-6857</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Localização</span>
+                                <span class="contact-value">Orlândia, São Paulo</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-social">
+                        <a href="https://github.com/luishenriquebracale" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/luishenriquebracale" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://instagram.com/luishenriquebracale" target="_blank" rel="noopener" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Assunto</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="footer-text">&copy; 2025 Luis Henrique Bracale. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="footer-center">
+                    <p class="footer-text">Desenvolvido com <i class="fas fa-heart"></i> por Luis Henrique</p>
+                </div>
+                
+                <div class="footer-right">
+                    <a href="#home" class="footer-link">Voltar ao topo <i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

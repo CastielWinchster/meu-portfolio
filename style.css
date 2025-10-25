@@ -1176,6 +1176,7 @@ img {
     justify-content: center;
     font-size: 6rem;
     color: var(--text-secondary);
+    overflow: hidden;
 }
 
 .profile-status {
@@ -1193,24 +1194,6 @@ img {
     border-radius: 50%;
     background: var(--accent-alt);
     animation: pulse 2s ease-in-out infinite;
-}
-
-.scroll-indicator {
-    position: absolute;
-    bottom: var(--space-lg);
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-xs);
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    animation: fadeIn 2s ease-out;
-}
-
-.scroll-arrow {
-    animation: bounce 2s ease-in-out infinite;
 }
 
 /* ========================================
@@ -1413,10 +1396,16 @@ img {
     background: var(--white);
 }
 
+/* CORREÇÃO 3: Alinhamento à esquerda das habilidades */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-xl);
+    text-align: left;
+}
+
+.skills-container * {
+    text-align: left;
 }
 
 .skills-category {
@@ -1425,6 +1414,7 @@ img {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-normal);
+    text-align: left;
 }
 
 .skills-category:hover {
@@ -1439,6 +1429,7 @@ img {
     display: flex;
     align-items: center;
     gap: var(--space-sm);
+    text-align: left;
 }
 
 .skills-list {
@@ -1481,6 +1472,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
+    text-align: center;
 }
 
 .soft-skill-card {

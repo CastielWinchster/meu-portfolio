@@ -867,6 +867,7 @@ img {
 .section {
     padding: var(--space-3xl) 0;
     position: relative;
+    z-index: 1; /* Mantém abaixo do hero */
 }
 
 .section:nth-child(even) {
@@ -1024,6 +1025,7 @@ img {
     padding-top: 70px;
     position: relative;
     overflow: hidden;
+    z-index: 2; /* Garante que hero fique acima de outras seções */
 }
 
 .hero::before {
@@ -1056,7 +1058,7 @@ img {
     margin: 0 auto;
     padding: 0 var(--space-lg);
     position: relative;
-    z-index: 1;
+    z-index: 3; /* Aumentado de 1 para 3 para ficar acima de outras seções */
 }
 
 .hero-content {
@@ -1155,28 +1157,34 @@ img {
     position: relative;
 }
 
-.profile-image {
-    width: 300px;
-    height: 300px;
-    margin: 0 auto var(--space-lg);
-    border-radius: 50%;
-    overflow: hidden;
-    background: linear-gradient(135deg, var(--accent), var(--accent-alt));
-    padding: 8px;
-    box-shadow: var(--shadow-lg);
+.profile-image-border {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #3498db, #16a085);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 32px rgba(44,62,80,0.07);
 }
 
-.profile-placeholder {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: var(--neutral-light);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 6rem;
-    color: var(--text-secondary);
-    overflow: hidden;
+.profile-image {
+  /* Círculo da foto */
+  width: 208px; /* Menor que o círculo azul externo */
+  height: 208px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: #fff; /* Opcional para borda branca fina */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
 }
 
 .profile-status {
@@ -1268,6 +1276,7 @@ img {
     margin-bottom: var(--space-md);
     position: relative;
     display: inline-block;
+    z-index: 1; /* Mantém abaixo do hero */
 }
 
 .section-title::after {
@@ -1297,7 +1306,13 @@ img {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: var(--space-2xl);
-    align-items: start;
+    align-items: flex-start;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
 }
 
 .about-text {
@@ -1305,6 +1320,7 @@ img {
     color: var(--text-secondary);
     margin-bottom: var(--space-md);
     line-height: 1.8;
+    text-align: left;
 }
 
 .about-info {
@@ -1322,6 +1338,7 @@ img {
     background: var(--neutral-light);
     border-radius: var(--radius-md);
     transition: all var(--transition-normal);
+    text-align: left;
 }
 
 .info-item:hover {
@@ -1337,6 +1354,7 @@ img {
 .info-item div {
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .info-label {
@@ -2074,6 +2092,16 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 90px; /* Aumentado de 70px para 90px em mobile */
+        z-index: 2; /* Garante sobreposição correta */
+    }
+    
+    .section-header {
+        position: relative;
+        z-index: 1; /* Mantém abaixo do hero */
+    }
+    
     .mobile-menu-toggle {
         display: flex;
     }
@@ -2146,6 +2174,10 @@ textarea.form-control {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding-top: 100px; /* Mais espaço em telas muito pequenas */
+    }
+    
     .hero-title {
         font-size: 2rem;
     }
